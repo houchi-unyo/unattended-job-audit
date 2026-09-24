@@ -21,6 +21,17 @@ com.example.daily-report         9:40                 ひっかかりなし
 
 ## 入れ方
 
+### プラグイン・マーケットプレイスから(推奨)
+
+このリポジトリ自体が Claude Code のプラグイン・マーケットプレイスです(`.claude-plugin/marketplace.json`)。
+
+```
+/plugin marketplace add houchi-unyo/unattended-job-audit
+/plugin install unattended-job-audit@unattended-job-audit
+```
+
+### 直接 clone する場合
+
 Claude Code のスキルとして置きます。
 
 ```
@@ -87,3 +98,19 @@ no idempotency guard, no staleness watch.
 
 Standard library only, read-only. `python3 scripts/scan_jobs.py --help`.
 The ten checks, and the real incidents behind each one, are in `reference/checklist.md` (Japanese).
+
+### Install
+
+As a Claude Code plugin (this repository is its own marketplace):
+
+```
+/plugin marketplace add houchi-unyo/unattended-job-audit
+/plugin install unattended-job-audit@unattended-job-audit
+```
+
+Or clone it directly as a skill:
+
+```
+git clone https://github.com/houchi-unyo/unattended-job-audit.git \
+  ~/.claude/skills/unattended-job-audit
+```

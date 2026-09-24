@@ -1,0 +1,12 @@
+{
+  "name": "unattended-job-audit",
+  "description": "Audits scheduled jobs (launchd, cron, GitHub Actions) for the failure modes that make unattended automation break silently: no failure notification, no idempotency guard, no staleness watch.",
+  "version": "1.0.0",
+  "author": {
+    "name": "houchi-unyo"
+  },
+  "homepage": "https://github.com/houchi-unyo/unattended-job-audit",
+  "repository": "https://github.com/houchi-unyo/unattended-job-audit",
+  "license": "MIT",
+  "keywords": ["automation", "cron", "launchd", "github-actions", "reliability", "observability"]
+}
